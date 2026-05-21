@@ -27,9 +27,17 @@ class Seat {
 }
 
 // Booking Class
-class Booking 
-    Seat[][] seats;
-    double totalCost;
+Seat[][] seats = new Seat[5][5]; // 5 rows and 5 columns of seats
+    for(int i=0; i<5; i++){
+        for(int j=0; j<5; j++){
+            if(i<2){
+                seats[i][j] = new Seat("Premium", 15.0);
+            } else {
+                seats[i][j] = new Seat("Regular", 10.0);
+            }
+        }
+    }
+
     
     
 
