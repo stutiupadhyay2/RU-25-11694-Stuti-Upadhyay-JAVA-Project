@@ -11,8 +11,8 @@ public class MovieTicketSystem {
 
         System.out.println("Movie Ticket Booking System");
         System.out.println("----------------------------");
-        System.out.println("Movie Name : " + movie.getmovieName());
-        System.out.println("Show Time  : " + movie.getshowTime());
+        System.out.println("Movie Name : " + movie.getMovieName());
+        System.out.println("Show Time  : " + movie.getShowTime());
 
         booking.displaySeats();
 
@@ -47,7 +47,7 @@ public class MovieTicketSystem {
 
         System.out.println("\nBooking Confirmation");
         System.out.println("---------------------");
-        System.out.println("Movie : " + movie.getmovieName());
+        System.out.println("Movie : " + movie.getMovieName());
         System.out.println("Selected Seats : " + selectedSeats);
         System.out.println("Total Cost : " + booking.getTotalCost());
         System.out.println("Booking Confirmed!");
@@ -64,10 +64,10 @@ class Movie {
         this.movieName = movieName;
         this.showTime = showTime;
     }
-    String getmovieName(){
+    String getMovieName(){
         return movieName;
     }
-    String getshowTime(){
+    String getShowTime(){
         return showTime;
     }
 }
